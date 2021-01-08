@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: rgba(221, 221, 221, 0.5);
+  width: fit-content;
+  margin: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu .menu-item {
+  padding: 0 10px;
+  margin: 0;
+  border-right: 1px solid rgba(221, 221, 221, 0.5);
+}
+
+.menu .menu-item p {
+  margin: 0;
+}
+
+.menu .menu-item img {
+  max-width: 20px;
+}
+
+.menu-item:hover {
+  color: rgb(58, 201, 101);
+  outline: rgb(58, 201, 101);
+  cursor: pointer;
+}
+
+.menu-item:first-child {
+  background: #fff;
+  box-shadow: -2px 4px rgb(224 221 221);
+}
+
+.menu-item:last-child {
+  border-right: none;
+}
