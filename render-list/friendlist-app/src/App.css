@@ -1,0 +1,54 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  border: 1px solid #dddddd;
+  width: 500px;
+  margin: 20px;
+  border-radius: 8px;
+  padding: 10px 7px;
+}
+
+.App .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.App .follow-friend-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.follow-friend-list p {
+  color: #1876f2;
+}
+
+.follow-friend-list :hover {
+  color: #088bf7;
+  cursor: pointer;
+}
+
+.App .follow-friend-list .follow-friend-list-left {
+  display: flex;
+}
+
+.follow-friend-list img {
+  border-radius: 20px;
+  margin-right: 8px;
+}
+
+.follow-friend-list-right :first-child {
+  color: black;
+}
+
+.follow-friend-list-right p {
+  color: rgb(128, 125, 125);
+}

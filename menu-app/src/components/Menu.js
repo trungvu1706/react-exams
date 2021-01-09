@@ -6,8 +6,8 @@ class Menu extends Component {
   render() {
     return (
       <div className="menu">
-        {this.props.items.map((item) => (
-          <MenuItem item={item} />
+        {this.props.items.map((item, index) => (
+          <MenuItem item={item} key={index} />
         ))}
       </div>
     );
