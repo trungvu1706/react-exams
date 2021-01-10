@@ -1,0 +1,18 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.table-row {
+  background-color: white;
+}
+
+.table-even-row {
+  background-color: rgb(239 236 236);
+}
