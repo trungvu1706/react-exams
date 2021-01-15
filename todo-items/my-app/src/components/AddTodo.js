@@ -11,7 +11,7 @@ class AddTodo extends Component {
   }
 
   render() {
-    console.log(this.state.todoName);
+    // console.log(this.state.todoName);
     return (
       <div className="add-todo">
         <input
@@ -24,12 +24,12 @@ class AddTodo extends Component {
             }
           }}
         />
-        {/* <button
+        <button
           className="btn-ok"
           onClick={() => this.props.addTodo(this.state.todoName)}
         >
           Add
-        </button> */}
+        </button>
       </div>
     );
   }

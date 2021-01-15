@@ -18,9 +18,9 @@ class App extends Component {
     const cloneTodos = this.state.todos;
 
     cloneTodos.map((todo) => {
-      console.log(todo);
+      // console.log(todo);
       if (todo.id === id) {
-        console.log("match", todo);
+        // console.log("match", todo);
         todo.isComplete = !todo.isComplete;
       }
     });
@@ -37,6 +37,14 @@ class App extends Component {
     });
 
     this.setState({ todos: cloneTodos, isShowInput: false });
+  };
+
+  handleRemoveItem = (id) => {
+    const cloneTodos = this.state.todos;
+    let todoIndex = cloneTodos.findIndex((todo) => todo.id === id); // delete theo index neu todo.id = id
+
+    cloneTodos.splice(todoIndex, 1);
+    this.setState({ todos: cloneTodos }); // thay doi theo value vua xoa
   };
 
   render() {
@@ -66,6 +74,7 @@ class App extends Component {
               todos={doingTodos}
               title={"upcoming"}
               onClick={this.handleUpdateItem}
+              onDelete={this.handleRemoveItem}
             />
             <TodoList
               todos={completedTodos}

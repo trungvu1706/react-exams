@@ -5,12 +5,17 @@ import "./style.css";
 
 class TodoList extends Component {
   render() {
-    const { title, todos, onClick } = this.props;
+    const { title, todos, onClick, onDelete } = this.props;
     return (
       <div className="todo-list">
         <CategoryTitle>{title}</CategoryTitle>
         {todos.map((todo, index) => (
-          <TodoItem todo={todo} key={index} onClick={onClick} />
+          <TodoItem
+            todo={todo}
+            key={index}
+            onClick={onClick}
+            onDelete={onDelete}
+          />
         ))}
       </div>
     );
