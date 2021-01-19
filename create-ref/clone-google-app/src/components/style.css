@@ -1,0 +1,148 @@
+/* task header */
+.task-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  align-items: center;
+}
+
+.task-header > .unit-link {
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  font-size: 13px;
+}
+
+.unit-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.task-header img {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.task-header > .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+/* task input */
+
+.task-input {
+  padding-top: 6px;
+  text-align: center;
+}
+
+.task-input > .logo {
+  margin-bottom: 10px;
+}
+
+.task-input > .form {
+  width: fit-content;
+  margin: auto;
+  border: 1px solid;
+  color: #dfe1e5;
+  border-radius: 50px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.task-input .form:hover {
+  box-shadow: 0px 1px 3px 1px #cbcdd1;
+}
+
+.task-input input {
+  border: none;
+  outline: none;
+  width: 430px;
+}
+
+.task-input .icon {
+  margin: 0 10px;
+  display: flex;
+}
+
+/* task button */
+
+.task-btn > .center {
+  margin: 25px 0;
+}
+
+.center .btn-controll {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #f8f9fa;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.center .btn-controll:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+}
+
+.center .religion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.religion a {
+  text-decoration: none;
+  color: #1a0dab;
+  padding: 0 3px;
+}
+
+/* task footer */
+
+.task-footer {
+  margin-top: 50px;
+  background: #f2f2f2;
+  line-height: 40px;
+  border-top: 1px solid #dadce0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.task-footer .footer {
+  /* background: #f2f2f2; */
+  font-size: 14px;
+  color: #70757a;
+}
+
+.footer > .footer-rlg {
+  border-bottom: 1px solid #dadce0;
+  padding-left: 34px;
+}
+
+.footer > .left-term {
+  float: left;
+  padding-left: 28px;
+}
+
+.footer > .right-term {
+  float: right;
+  padding-right: 28px;
+}
+
+.unit-link-terms a {
+  color: #70757a;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.unit-link-terms a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
