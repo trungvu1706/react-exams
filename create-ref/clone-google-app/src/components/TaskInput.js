@@ -16,7 +16,7 @@ class TaskInput extends Component {
       <div className="task-input">
         <div className="logo">
           <img
-            height={72}
+            height={90}
             src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
             alt="logo"
           />
