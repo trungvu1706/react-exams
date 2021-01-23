@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./App.css";
-import { nanoid } from "nanoid";
 
 import TaskMenu from "./components/TaskMenu";
 import TaskShowBooks from "./components/TaskShowBooks";
@@ -14,32 +13,28 @@ class App extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   axios
-  //     .get("http://localhost:3000/books")
-  //     .then((res) => {
-  //       const { books } = res.data;
-  //       console.log({ books });
-  //     })
-  //     .catch((e) => {
-  //       console.log(e);
-  //     });
-  // }
-
   componentDidMount() {
     const getBooks = async () => {
       const res = await axios.get("http://localhost:3000/books");
+      // console.log(res);
       this.setState({ books: res.data.books });
     };
 
     getBooks();
   }
 
+  showResult = (value) => {
+    this.setState({
+      books: value,
+    });
+    console.log(value);
+  };
+
   render() {
     return (
       <div className="App">
         <TaskMenu />
-        <TaskShowBooks books={this.state.books} />
+        <TaskShowBooks books={this.state.books} display={this.showResult} />
       </div>
     );
   }

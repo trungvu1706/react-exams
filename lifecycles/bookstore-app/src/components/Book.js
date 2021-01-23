@@ -20,8 +20,12 @@ class Book extends Component {
               <tr key={index}>
                 <th>{index + 1}</th>
                 <td>{book.title}</td>
-                <td>View</td>
-                <td>Add</td>
+                <td>
+                  <a href="http://localhost:3001/">View</a>
+                </td>
+                <td>
+                  <a href="http://localhost:3001/">Add</a>
+                </td>
               </tr>
             ))}
 
