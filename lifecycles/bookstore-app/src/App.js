@@ -23,18 +23,21 @@ class App extends Component {
     getBooks();
   }
 
-  showResult = (value) => {
-    this.setState({
-      books: value,
-    });
-    console.log(value);
-  };
+  // showResult = (value) => {
+  //   this.setState({
+  //     books: value,
+  //   });
+  //   console.log(value);
+  // };
 
   render() {
     return (
       <div className="App">
         <TaskMenu />
-        <TaskShowBooks books={this.state.books} display={this.showResult} />
+        <TaskShowBooks
+          books={this.state.books}
+          // display={this.showResult}
+        />
       </div>
     );
   }

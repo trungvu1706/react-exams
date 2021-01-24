@@ -6,10 +6,18 @@ import axios from "axios";
 import Book from "./Book";
 
 class TaskShowBooks extends Component {
-  constructor() {
-    super();
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     title: "",
+  //   };
+  // }
+
+  constructor(props) {
+    super(props);
     this.state = {
       title: "",
+      books: props.books,
     };
   }
 
@@ -26,9 +34,10 @@ class TaskShowBooks extends Component {
     if (e.key === "Enter" && value.trim()) {
       const query = async () => {
         const res = await axios.get(`http://localhost:3000/books/?q=${value}`);
-        this.props.display(res.data.books);
+        // this.props.display(res.data.books);
         this.setState({
           title: "",
+          books: res.data.books,
         });
       };
       query();
@@ -41,9 +50,10 @@ class TaskShowBooks extends Component {
     if (value.trim()) {
       const query = async () => {
         const res = await axios.get(`http://localhost:3000/books/?q=${value}`);
-        this.props.display(res.data.books);
+        // this.props.display(res.data.books);
         this.setState({
           title: "",
+          books: res.data.books,
         });
       };
       query();
@@ -75,7 +85,8 @@ class TaskShowBooks extends Component {
           </div>
 
           <div className="content">
-            <Book books={this.props.books} />
+            {/* <Book books={this.props.books} /> */}
+            <Book books={this.state.books} />
           </div>
         </div>
       </div>
