@@ -17,8 +17,8 @@
 .search-box > .search-bar {
   width: fit-content;
   margin: 10px;
-  border: 1px solid;
-  color: #cdcdcd;
+  border: 1px solid #cdcdcd;
+
   border-radius: 5px;
   padding: 5px 10px;
 }

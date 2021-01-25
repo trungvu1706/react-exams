@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "./style.css";
-import { Button } from "reactstrap";
+import "antd/dist/antd.css";
 import axios from "axios";
+import { Button } from "antd";
 
+//add component
 import Book from "./Book";
 
 class TaskShowBooks extends Component {
@@ -10,6 +12,7 @@ class TaskShowBooks extends Component {
     super();
     this.state = {
       title: "",
+      size: "large",
     };
   }
 
@@ -50,7 +53,12 @@ class TaskShowBooks extends Component {
     }
   };
 
+  handleSizeChange = (e) => {
+    this.setState({ size: e.target.value });
+  };
+
   render() {
+    const { size } = this.state;
     return (
       <div className="task-book">
         <center>
@@ -69,7 +77,7 @@ class TaskShowBooks extends Component {
               />
               <img src="../img/search.svg" alt="search" width={16} />
             </div>
-            <Button color="success" onClick={this.handleClick}>
+            <Button type="primary" size={size} onClick={this.handleClick}>
               Search
             </Button>
           </div>

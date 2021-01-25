@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     const getBooks = async () => {
       const res = await axios.get("http://localhost:3000/books");
-      // console.log(res);
+      console.log(res);
       this.setState({ books: res.data.books });
     };
 
