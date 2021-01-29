@@ -1,0 +1,134 @@
+.Blog {
+  margin-top: 100px;
+}
+
+.Blog .main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+.Blog .main .content {
+  margin: 10px;
+}
+
+.Blog .main .content h2 {
+  margin-left: 10px;
+}
+
+.Blog .main .content .pic {
+  margin: 10px;
+}
+
+.Blog .main .content .pic img {
+  width: 600px;
+  height: 400px;
+}
+
+.Blog .main .content .txt {
+  padding: 10px;
+}
+
+.Blog .main .content .written {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Blog .main .content .written img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #e0dfdf;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.Blog .main .content .written p {
+  margin: 0;
+}
+
+.Blog .main .side {
+  padding: 40px;
+}
+
+.Blog .main .side h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.Blog .main .side a {
+  color: #646464;
+  text-decoration: none;
+}
+
+.Blog .main .side a .side_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.Blog .main .side a .side_link h4 {
+  font-size: 17px;
+}
+
+.Blog .main .side a:hover {
+  color: #646464;
+  text-decoration: none;
+}
+
+.Blog .main .side img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e0dfdf;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.Blog .footer {
+  background-color: whitesmoke;
+}
+
+.Blog .footer .social {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.Blog .footer .social img {
+  width: 32px;
+  height: 32px;
+  margin: 30px;
+}
+
+.Blog .footer .social h3 {
+  margin: 0px;
+}
+
+.Blog .footer .others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #7c7c7c;
+  margin: 16px;
+}
+
+.Blog .footer .others a {
+  text-decoration: none;
+  color: #7c7c7c;
+}
+
+.Blog .footer .others a:hover {
+  color: #636363;
+}
+
+.Blog .footer .others .col {
+  padding: 30px;
+}
+/*# sourceMappingURL=Blog.module.css.map */
