@@ -1,0 +1,145 @@
+@import "../../asset/scss/vars";
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: $margin;
+  .background {
+    background-image: url("../../asset/images/login-bg.png");
+    background-size: 454px 618px;
+    background-repeat: no-repeat;
+    height: 618px;
+    width: 454px;
+    position: relative;
+    .frame {
+      margin: 99px 0 0 151px;
+      position: relative;
+      img {
+        width: 240px;
+        position: absolute;
+        top: 0;
+        height: 427px;
+        left: 0;
+      }
+    }
+  }
+
+  .form_login {
+    border: 1px solid #d2d2d2;
+    padding: $padding;
+    margin-top: 25px;
+    h3 {
+      background-image: url("../../asset/images/icon_insta.png");
+      margin: 22px auto 12px;
+      text-align: center;
+      font-size: 30px;
+      background-repeat: no-repeat;
+      background-position: 0 -130px;
+      height: 51px;
+      width: 175px;
+      background-size: 440px 411px;
+      background-position: 0 -129px;
+      overflow: hidden;
+      text-indent: 100%;
+      display: block;
+    }
+    .main_form {
+      margin: 30px auto 5px;
+      text-align: center;
+      .block {
+        margin-bottom: 5px;
+        padding: 0 20px;
+
+        input {
+          width: 300px;
+          padding: 14px 0 7px 5px;
+          font-size: 14px;
+          outline: none;
+          border-radius: $border-radius;
+          border: $border;
+        }
+        &:last-child {
+          margin-bottom: 8px;
+        }
+      }
+      .btn {
+        font-size: 16px;
+        padding: 8px 124px;
+        border-radius: $border-radius;
+        background-color: $color;
+        border: $border;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        font-weight: $font-weight;
+      }
+    }
+    .bottom_form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 12px 13px;
+      .line {
+        border: $border;
+        width: 100%;
+      }
+      div {
+        margin: 0 10px;
+      }
+    }
+    .btn_link_fb {
+      text-align: center;
+      margin: 24px 2px 2px 2px;
+      img {
+        width: 20px;
+        height: 20px;
+        margin: 3px;
+      }
+      span {
+        margin: 3px;
+      }
+      .btn {
+        border: none;
+        outline: none;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #00376b;
+      }
+    }
+    div {
+      text-align: $text;
+      a {
+        color: #00376b;
+        text-decoration: none;
+        font-size: 12px;
+      }
+    }
+  }
+  .register {
+    margin: 13px 0;
+    border: $border;
+    padding: $padding;
+    text-align: $text;
+    a {
+      text-decoration: none;
+      color: $color;
+      font-weight: $font-weight;
+    }
+  }
+
+  .get_link {
+    text-align: $text;
+    p {
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    img {
+      height: 40px;
+      margin: 3px;
+    }
+  }
+}
