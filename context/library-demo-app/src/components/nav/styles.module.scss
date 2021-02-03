@@ -1,0 +1,24 @@
+@import "../../asset/scss/var";
+
+.Nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+
+  .Nav_link {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    width: 40%;
+    padding: $padding;
+
+    a {
+      color: $text_color;
+      text-decoration: none;
+      padding: 10px;
+      &:hover {
+        color: rgb(170, 169, 169);
+      }
+    }
+  }
+}
