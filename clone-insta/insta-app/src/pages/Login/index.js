@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import cls from "./style.module.scss";
 import "../../asset/fonts/font.css";
+import classnames from "classnames";
 
 function Login() {
+  const [name, setName] = useState("");
+
+  const handleChange = (e) => {
+    let value = e.target.value;
+    setName(value);
+  };
+
+  const handleKeyUp = (e) => {
+    console.log(e);
+    let value = e.target.value;
+    if (e.key === "Enter" && value.trim()) {
+      setName(value);
+      setName("");
+    }
+  };
+
   return (
     <div className={cls.Login}>
       <section className={cls.main}>
@@ -17,21 +34,22 @@ function Login() {
             <div className={cls.main_form}>
               <form>
                 <div className={cls.block}>
-                  <label for="username">
-                    <input
-                      type="text"
-                      placeholder="Phone number, user name or email"
-                    />
-                  </label>
+                  <input
+                    type="text"
+                    placeholder="Phone number, user name or email"
+                    value={name}
+                    onChange={handleChange}
+                    onKeyUp={handleKeyUp}
+                  />
                 </div>
 
                 <div className={cls.block}>
-                  <label for="password">
-                    <input type="password" placeholder="Password" />
-                  </label>
+                  <input type="password" placeholder="Password" />
                 </div>
               </form>
-              <button className={cls.btn}>Log in</button>
+              <button className={classnames(cls.btn, name ? cls.isInput : "")}>
+                Log in
+              </button>
             </div>
             <div className={cls.bottom_form}>
               <div className={cls.line}></div>
